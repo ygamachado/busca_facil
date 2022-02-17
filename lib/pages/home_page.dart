@@ -1,7 +1,7 @@
-import 'package:cripto_moedas/pages/carteira_page.dart';
-import 'package:cripto_moedas/pages/configuracoes_page.dart';
-import 'package:cripto_moedas/pages/favoritas_page.dart';
-import 'package:cripto_moedas/pages/moedas_page.dart';
+//import 'package:busca_facil/pages/carteira_page.dart';
+//import 'package:busca_facil/pages/configuracoes_page.dart';
+//import 'package:busca_facil/pages/favoritas_page.dart';
+//import 'package:busca_facil/pages/moedas_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -33,10 +33,10 @@ class _HomePageState extends State<HomePage> {
       body: PageView(
         controller: pc,
         children: [
-          MoedasPage(),
-          FavoritasPage(),
-          CarteiraPage(),
-          ConfiguracoesPage(),
+         // MoedasPage(),
+         // FavoritasPage(),
+         // CarteiraPage(),
+         // ConfiguracoesPage(),
         ],
         onPageChanged: setPaginaAtual,
       ),
