@@ -2,7 +2,12 @@
 //import 'package:busca_facil/pages/configuracoes_page.dart';
 //import 'package:busca_facil/pages/favoritas_page.dart';
 //import 'package:busca_facil/pages/moedas_page.dart';
+import 'package:busca_facil/pages/services_page.dart';
 import 'package:flutter/material.dart';
+
+import 'busca_page.dart';
+import 'chat_page.dart';
+import 'config_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -33,17 +38,17 @@ class _HomePageState extends State<HomePage> {
       body: PageView(
         controller: pc,
         children: [
-         // MoedasPage(),
-         // FavoritasPage(),
-         // CarteiraPage(),
-         // ConfiguracoesPage(),
+          const BuscaPage(),
+          ServicesPage(),
+          ChatPage(),
+          const ConfigPage(),
         ],
         onPageChanged: setPaginaAtual,
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: paginaAtual,
         type: BottomNavigationBarType.fixed,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Todas'),
           BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Favoritas'),
           BottomNavigationBarItem(
