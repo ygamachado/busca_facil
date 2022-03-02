@@ -17,7 +17,7 @@ class _BuscaPageState extends State<BuscaPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Kindacode.com'),
+        title: Text('Busca Fácil'),
 
       ),
       body: Container(

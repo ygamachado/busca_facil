@@ -49,10 +49,9 @@ class _HomePageState extends State<HomePage> {
         currentIndex: paginaAtual,
         type: BottomNavigationBarType.fixed,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Todas'),
-          BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Favoritas'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.account_balance_wallet), label: 'Carteira'),
+          BottomNavigationBarItem(icon: Icon(Icons.house_rounded), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: 'Serviços'),
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chat'),
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Conta'),
         ],
         onTap: (pagina) {
@@ -62,7 +61,7 @@ class _HomePageState extends State<HomePage> {
             curve: Curves.ease,
           );
         },
-        // backgroundColor: Colors.grey[100],
+         backgroundColor: Colors.grey[100],
       ),
     );
   }
